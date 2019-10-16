@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack-ror3j.mongodb.net/
     useNewUrlParser:  true,
     useUnifiedTopology: true
 })
-
+ 
 app.use(express.json())
 app.use(routes)
 
