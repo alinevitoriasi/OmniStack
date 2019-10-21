@@ -13,5 +13,10 @@ module.exports ={
         }
 
         return res.json(user);
+    },
+    async show(req,res){
+        const {user_id}= req.params
+        const users = await User.findOne({id :user_id});
+        return res.json(users)
     }
 };
